@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "name": "Camiseta Branca Gola Careca",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "white crew-neck t-shirt",
+    "imageUrl": "/images/00000_00.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Camiseta Branca com Estampa",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "white t-shirt with print",
+    "imageUrl": "/images/00000_00-Copia.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Camiseta Preta Gola V",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "black v-neck t-shirt",
+    "imageUrl": "/images/00001_00.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Camiseta Preta Manga Longa",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "black long-sleeve t-shirt",
+    "imageUrl": "/images/00002_00.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Camiseta Azul Marinho",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "navy blue t-shirt",
+    "imageUrl": "/images/00003_00.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Regata Branca Esportiva",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "white sport tank top",
+    "imageUrl": "/images/00006_00.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Camiseta Branca Gola Careca",
+    "category": "Camisetas",
+    "gender": "feminino",
+    "description": "white crew-neck t-shirt",
+    "imageUrl": "/images/00007_00.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Camiseta Preta com Estampa",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "black t-shirt with print",
+    "imageUrl": "/images/00009_00.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Camiseta Cinza Mescla",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "heather grey t-shirt",
+    "imageUrl": "/images/00010_00.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Regata Preta",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "black tank top",
+    "imageUrl": "/images/00011_00.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Camiseta Adidas Azul",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "blue Adidas t-shirt",
+    "imageUrl": "/images/00725_00.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Camiseta Adidas Branca",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "white Adidas t-shirt",
+    "imageUrl": "/images/00725_00-Copia.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Polo Vermelha",
+    "category": "Camisas",
+    "gender": "masculino",
+    "description": "red polo shirt",
+    "imageUrl": "/images/01280_00.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Camisa Social Xadrez",
+    "category": "Camisas",
+    "gender": "masculino",
+    "description": "plaid dress shirt",
+    "imageUrl": "/images/02783_00.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Blusa Floral de Alça",
+    "category": "Blusas",
+    "gender": "feminino",
+    "description": "floral strap top",
+    "imageUrl": "/images/03751_00.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Blusa Amarela de Seda",
+    "category": "Blusas",
+    "gender": "feminino",
+    "description": "yellow silk blouse",
+    "imageUrl": "/images/06428_00.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Blusa Estampada Gola V",
+    "category": "Blusas",
+    "gender": "feminino",
+    "description": "printed v-neck blouse",
+    "imageUrl": "/images/06802_00.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Regata Preta com Renda",
+    "category": "Blusas",
+    "gender": "feminino",
+    "description": "black tank top with lace",
+    "imageUrl": "/images/07426_00.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Blusa de Alça Fina Preta",
+    "category": "Blusas",
+    "gender": "feminino",
+    "description": "black spaghetti strap top",
+    "imageUrl": "/images/08348_00.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Regata Branca Básica",
+    "category": "Blusas",
+    "gender": "feminino",
+    "description": "basic white tank top",
+    "imageUrl": "/images/09933_00.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Blusa Vinho Acetinada",
+    "category": "Blusas",
+    "gender": "feminino",
+    "description": "burgundy satin blouse",
+    "imageUrl": "/images/11028_00.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Camiseta Branca Básica",
+    "category": "Camisetas",
+    "gender": "feminino",
+    "description": "basic white t-shirt",
+    "imageUrl": "/images/11351_00.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Camiseta Rosa Claro",
+    "category": "Camisetas",
+    "gender": "feminino",
+    "description": "light pink t-shirt",
+    "imageUrl": "/images/11791_00.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Camiseta Esportiva Verde",
+    "category": "Camisetas",
+    "gender": "masculino",
+    "description": "green sport t-shirt",
+    "imageUrl": "/images/11991_00.jpg"
+  }
+]

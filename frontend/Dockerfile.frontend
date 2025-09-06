@@ -1,0 +1,36 @@
+# --- Estágio 1: Builder ---
+# Usamos uma imagem Node.js para construir o projeto
+FROM node:18-alpine AS builder
+
+# Defina o diretório de trabalho
+WORKDIR /app
+
+# Copie os arquivos de definição de pacotes
+COPY package*.json ./
+
+# Instale as dependências de desenvolvimento
+RUN npm install
+
+# Copie o resto do código do front-end
+COPY . .
+
+# Construa a aplicação para produção
+RUN npm run build
+
+# --- Estágio 2: Runner ---
+# Usamos uma imagem Alpine limpa e menor para rodar a aplicação
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copie apenas os artefatos necessários do estágio 'builder'
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+# Exponha a porta que o Next.js usa em produção
+EXPOSE 3000
+
+# O comando para iniciar o servidor de produção do Next.js
+CMD ["npm", "start"]
