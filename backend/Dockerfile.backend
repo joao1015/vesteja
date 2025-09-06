@@ -1,0 +1,30 @@
+# Use uma imagem oficial do Python como base
+FROM python:3.10-slim
+
+# Evita buffer e .pyc
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+# Diretório de trabalho
+WORKDIR /app
+
+# Dependências do sistema (opcional; útil p/ libs de imagem)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libglib2.0-0 libsm6 libxrender1 libxext6 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copie primeiro as dependências para aproveitar cache
+COPY requirements.txt .
+
+# Instale as dependências Python
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copie o restante do código
+COPY . .
+
+# Exponha a porta do Gunicorn
+EXPOSE 8000
+
+# Inicie com Gunicorn servindo o objeto Flask `app` do módulo `app.py`
+# Se seu arquivo chama app.py e tem `app = Flask(__name__)`, fica app:app
+CMD ["gunicorn", "-w", "2", "-k", "gthread", "-b", "0.0.0.0:8000", "app:app"]
