@@ -23,5 +23,5 @@ services:
       - backend
     environment:
       # Útil no front para chamar o backend via rede do compose
-      NEXT_PUBLIC_BACKEND_URL: "http://backend:8000"
+      NEXT_PUBLIC_BACKEND_URL: "http://191.238.222.198:8000"
     restart: unless-stopped
