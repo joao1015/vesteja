@@ -102,7 +102,7 @@ export default function VesteJaPage() {
             formData.append('garment', garmentFile);
             formData.append('description', selectedGarment.description);
             // Lembre-se que esta URL deve ser 'http://backend:8000/tryon' ao rodar com Docker
-            const apiResponse = await fetch('http://localhost:8000/tryon', { method: 'POST', body: formData });
+            const apiResponse = await fetch('http://191.238.222.198:8000/tryon', { method: 'POST', body: formData });
             const data = await apiResponse.json();
             if (!apiResponse.ok) throw new Error(data.error || "Ocorreu um erro no servidor.");
             setResultImage(data.output);
