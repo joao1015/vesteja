@@ -1,3 +1,4 @@
+//vesteja\frontend\src\app\layout.tsx
 "use client";
 
 // Imports de bibliotecas e funcionalidades
