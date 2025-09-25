@@ -73,7 +73,7 @@ function VRScene({ imageUrl, onClose }: VRSceneProps) {
       </Canvas>
     </div>
   );
-} 
+}
 // --- FIM DO COMPONENTE VRSCENE ---
 
 
