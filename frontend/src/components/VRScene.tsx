@@ -23,9 +23,8 @@ import { XR, XRButton, createXRStore } from "@react-three/xr";
 import { useTexture, OrbitControls } from "@react-three/drei";
 
 
-// --- INÍCIO DO COMPONENTE VRSCENE (VERSÃO CORRIGIDA COM TIPOS) ---
+// --- INÍCIO DO COMPONENTE VRSCENE (AGORA DENTRO DESTE ARQUIVO E CORRIGIDO PARA VR) ---
 
-// 1. Definição da interface para as propriedades do VRScene
 interface VRSceneProps {
   imageUrl: string;
   onClose: () => void;
@@ -34,6 +33,7 @@ interface VRSceneProps {
 function ResultPanel({ imageUrl }: { imageUrl: string }) {
   const texture = useTexture(imageUrl);
   return (
+    // Posição e tamanho da tela ajustados para melhor imersão
     <mesh position={[0, 1.6, -3]}>
       <planeGeometry args={[3.2, 1.8]} />
       <meshBasicMaterial map={texture} toneMapped={false} />
@@ -43,7 +43,6 @@ function ResultPanel({ imageUrl }: { imageUrl: string }) {
 
 const store = createXRStore();
 
-// 2. Componente VRScene usando a interface de propriedades
 function VRScene({ imageUrl, onClose }: VRSceneProps) {
   return (
     <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm">
@@ -58,9 +57,11 @@ function VRScene({ imageUrl, onClose }: VRSceneProps) {
 
       <XRButton
         store={store}
+        // MODO ALTERADO PARA REALIDADE VIRTUAL
         mode="immersive-vr"
         className="absolute bottom-4 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-lg bg-white/90 text-black font-medium shadow"
       >
+        {/* TEXTO DO BOTÃO ALTERADO */}
         Entrar em VR
       </XRButton>
 
