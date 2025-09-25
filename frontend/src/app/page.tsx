@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useCallback, useEffect, FormEvent } from 'react';
 import Webcam from 'react-webcam';
-import { VRScene } from '../components/VRScene';
+import VRScene from '../components/VRScene';
 import * as tf from '@tensorflow/tfjs-core';
 import * as poseDetection from '@tensorflow-models/pose-detection';
 import '@tensorflow/tfjs-backend-webgl';
