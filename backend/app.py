@@ -15,7 +15,7 @@ load_dotenv()
 app = Flask(__name__, static_folder="static")
 
 # 3. Aplicar configurações como o CORS
-CORS(app, resources={r"/tryon": {"origins": ["http://localhost:3000", "http://191.238.222.198:3000"]}})
+CORS(app, resources={r"/tryon": {"origins": "http://localhost:3000"}})
 
 # --- O resto do seu código permanece o mesmo, pois está ótimo ---
 
